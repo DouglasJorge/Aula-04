@@ -1,0 +1,34 @@
+git config --global user.email "douglasrjorge@gmail.com"
+git config --global user.name "DouglasJorge"
+
+Para adicionar 
+git add .
+
+Verificar status
+git status
+
+Após as alterações, realizar o commit
+git commit -m "mensagem"
+
+Para verificar quem fez as alterações de commit
+git log
+
+Para saber qual repositório estamos conectados
+git remote 
+git remote -v
+
+Para enviar os commits do repositório local para o repositório remoto
+git push origin main
+
+Para baixar os commits do repositório remoto para o repositório local
+git pull origin main
+
+Para reverter o commit
+git revert +id pego do git log - ex:
+git revert 34789c6055dc66f3c4052d8709923ea63d68944a
+
+Para apagar as alterações em um commit local
+git reset --hard +id anterior ao último
+
+Para alterar o ultimo commit, sem necessidade de apagá-lo
+git commit --amend -m "mensagem"
